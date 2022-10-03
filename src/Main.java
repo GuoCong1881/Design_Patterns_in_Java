@@ -30,4 +30,11 @@ public class Main {
      * - Abstract Factory
      * - Builder
      */
+
+    /**
+     * Behavioral Patterns:
+     * - Strategy pattern
+     * - Template Method pattern
+     *
+     */
 }
