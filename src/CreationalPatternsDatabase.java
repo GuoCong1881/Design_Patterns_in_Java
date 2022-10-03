@@ -45,5 +45,15 @@ import java.util.Objects;
             CreationalPatternsDatabase b = CreationalPatternsDatabase.getInstance();
             System.out.println(a == b);
         }
+
+
+        /**
+         * Disadvantages of Singletons:
+         *
+         * - Singletons can cause brittle assumptions in your code. If later on, you decide you need multiple
+         * instances of the class, you might have to refactor a bunch of code. (for instance: testing envir and
+         * production envir should use different databases, thus more than one instance of Database are needed
+         * - Code that depends on singletons can become hard to test. (for instance: to use a fake database to test the clients)
+         */
     }
 
