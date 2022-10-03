@@ -1,4 +1,4 @@
-package Exercise_Builder;
+package CreationalPatterns.Exercise_Builder;
 
 import java.io.Serializable;
 import java.time.Duration;

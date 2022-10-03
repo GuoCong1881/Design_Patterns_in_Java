@@ -1,9 +1,9 @@
-package Exercise_Builder;
+package CreationalPatterns.Exercise_Builder;
 
 public class Builder {
 
     /**
-     * Exercise_Builder.Builder:
+     * CreationalPatterns.Exercise_Builder.Builder:
      *
      * - A mutable factory that constructs the state of a to-be-created object, property by property,
      * and then builds the object.

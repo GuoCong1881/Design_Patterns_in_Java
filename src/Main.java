@@ -23,4 +23,11 @@ public class Main {
      * - Behavioral patterns: patterns that deal with how different objects interact
      * - Structural patterns: patterns that deal with how different objects fit together
      */
+
+    /**
+     * Creational Patterns:
+     * - Singleton: i.e. database
+     * - Abstract Factory
+     * - Builder
+     */
 }

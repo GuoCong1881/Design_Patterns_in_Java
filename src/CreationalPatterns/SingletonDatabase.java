@@ -1,3 +1,5 @@
+package CreationalPatterns;
+
 import java.util.Objects;
 
     /**
@@ -14,19 +16,19 @@ import java.util.Objects;
      * - The instance is initialized only when it's first used (also known as lazy initialization).
      */
 
-    public final class CreationalPatternsDatabase{
+    public final class SingletonDatabase {
     /**
     final: to make sure the class can't be extended
      */
-        private static CreationalPatternsDatabase database;
+        private static SingletonDatabase database;
 
-        private CreationalPatternsDatabase() {}
+        private SingletonDatabase() {}
         /**
          * private constructor: to make sure the class has only one instance
           */
-        public static CreationalPatternsDatabase getInstance(){
+        public static SingletonDatabase getInstance(){
             if (database == null){
-                database = new CreationalPatternsDatabase();
+                database = new SingletonDatabase();
                 database.connect("/");
             }
             return database;
@@ -41,8 +43,8 @@ import java.util.Objects;
         }
 
         public static void main(String[] args){
-            CreationalPatternsDatabase a = CreationalPatternsDatabase.getInstance();
-            CreationalPatternsDatabase b = CreationalPatternsDatabase.getInstance();
+            SingletonDatabase a = SingletonDatabase.getInstance();
+            SingletonDatabase b = SingletonDatabase.getInstance();
             System.out.println(a == b);
         }
 
