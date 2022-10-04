@@ -36,5 +36,9 @@ public class Main {
      * - Strategy pattern
      * - Template Method pattern
      *
+     * Structural Patterns: involve how objects fit together to form the structure of the software
+     * - Adapter pattern
+     * - decorator pattern
+     *
      */
 }
