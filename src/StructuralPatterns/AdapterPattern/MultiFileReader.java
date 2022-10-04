@@ -5,6 +5,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -32,27 +33,20 @@ import java.util.List;
  */
 public final class MultiFileReader implements Closeable {
 
-    private List<BufferedReader> readers = null;
+    private final List<BufferedReader> readers;
 
     public MultiFileReader(List<Path> paths) {
         // TODO: Build the List of BufferedReaders
+        readers = new ArrayList<>(paths.size());
         try{
             for (Path path: paths){
                 BufferedReader reader = Files.newBufferedReader(path);
-                this.readers.add(reader);
+                readers.add(reader);
             }
         } catch (IOException e) {
             e.printStackTrace();
-            if (this.readers != null){
-                for (BufferedReader reader: this.readers){
-                    try{
-                        reader.close();
-                    } catch (IOException ec) {
-                        ec.printStackTrace();
-                    }
-
-                }
-            }
+        } finally {
+            close();
         }
     }
 
@@ -63,13 +57,10 @@ public final class MultiFileReader implements Closeable {
     @Override
     public void close() {
         // TODO: Close all the readers.
-        if (readers != null){
-            for (BufferedReader reader: readers){
-                try{
-                    reader.close();
-                } catch (IOException e){
-                    e.printStackTrace();
-                }
+        for (BufferedReader reader: readers){
+            try{
+                reader.close();
+            } catch (IOException ignore){
             }
         }
     }

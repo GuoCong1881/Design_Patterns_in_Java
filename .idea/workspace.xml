@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cb47472-6360-490a-8b2e-655e9f6f5a3c" name="Changes" comment="Behavioral Patterns: template method">
-      <change afterPath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/Main_AdapterPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MergeShards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MergeShardsOriginal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MultiFileReader.java" afterDir="false" />
+    <list default="true" id="9cb47472-6360-490a-8b2e-655e9f6f5a3c" name="Changes" comment="Structural Patterns: Adapter Pattern (data)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MergeShards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MergeShards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MergeShardsOriginal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MergeShardsOriginal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MultiFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MultiFileReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.MergeShardsOriginal">
+  <component name="RunManager" selected="Application.MergeShards">
     <configuration name="Calculate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BehavioralPatterns.Exercise_Strategy.Calculate" />
       <module name="Design_Patterns_in_Java" />
@@ -105,8 +104,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MergeShardsOriginal" />
         <item itemvalue="Application.MergeShards" />
+        <item itemvalue="Application.MergeShardsOriginal" />
         <item itemvalue="Application.Calculate" />
         <item itemvalue="Application.CreationalPatterns.Exercise_Builder.Main" />
         <item itemvalue="Application.CreationalPatterns.SingletonDatabase" />
@@ -171,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664905382959</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Structural Patterns: Adapter Pattern">
+      <created>1664908447379</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664908447379</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Structural Patterns: Adapter Pattern (data)">
+      <created>1664908470431</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664908470431</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,7 +205,9 @@
     <MESSAGE value="Creational Patterns" />
     <MESSAGE value="Behavioral Patterns: strategy pattern" />
     <MESSAGE value="Behavioral Patterns: template method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Behavioral Patterns: template method" />
+    <MESSAGE value="Structural Patterns: Adapter Pattern" />
+    <MESSAGE value="Structural Patterns: Adapter Pattern (data)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Structural Patterns: Adapter Pattern (data)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -201,7 +216,17 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/StructuralPatterns/AdapterPattern/MergeShards.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.io.InputStreamReader" memberName="lock" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

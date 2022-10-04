@@ -70,7 +70,7 @@ public final class MergeShardsOriginal {
 
     public static void main(String[] args) throws Exception {
         String[] paths = {"E:/JavaNanodegree/Design_Patterns_in_Java/src/StructuralPatterns/AdapterPattern/shards",
-                "E:\\JavaNanodegree\\Design_Patterns_in_Java\\src\\StructuralPatterns\\AdapterPattern"};
+                "E:\\JavaNanodegree\\Design_Patterns_in_Java\\src\\StructuralPatterns\\AdapterPattern\\sorted.txt"};
         merge(paths);
     }
 
