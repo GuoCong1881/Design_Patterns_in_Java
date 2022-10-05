@@ -29,9 +29,7 @@ public class Main {
      * - Singleton: i.e. database
      * - Abstract Factory
      * - Builder
-     */
-
-    /**
+     *
      * Behavioral Patterns:
      * - Strategy pattern
      * - Template Method pattern
@@ -39,6 +37,20 @@ public class Main {
      * Structural Patterns: involve how objects fit together to form the structure of the software
      * - Adapter pattern
      * - decorator pattern
+     *
+     * Dependency: anything your code needs to work, such as an external library, an environment variable, a remote webstie, or a database
+     * In the context of dependency injection, a dependency usually refers to an object, class, or interface that your code
+     * imports, creates, or uses
+     *
+     * Dependency Injection (DI)
+     * is a design pattern that moves the creation of dependencies to outside of your code.
+     * Instead of creating objects, you tell the DI framework to create the objects for you, and
+     * then you inject those objects into your class
+     *
+     * DI disadvantages:
+     * - requires extra configuration (annotations or XML)
+     * - can make code harder to understand and debug
+     *
      *
      */
 }

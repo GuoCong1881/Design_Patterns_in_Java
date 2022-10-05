@@ -45,7 +45,6 @@ public final class MultiFileReader implements Closeable {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
             close();
         }
     }

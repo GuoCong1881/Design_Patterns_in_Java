@@ -7,5 +7,10 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="aopalliance" level="project" />
+    <orderEntry type="library" name="google.guava.failureaccess" level="project" />
+    <orderEntry type="library" name="google.guava" level="project" />
+    <orderEntry type="library" name="google.inject.guice" level="project" />
+    <orderEntry type="library" name="javax.inject" level="project" />
   </component>
 </module>
